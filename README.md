@@ -227,8 +227,6 @@ If this work helps your research, please cite:
 @misc{ho2026soteria,
   title         = {SOTERIA: Video-based Seizure Prediction},
   author        = {Ho, Gavin},
-  year          = {2026},
-  eprint        = {YOUR_PAPER_ID},
-  archivePrefix = {arXiv}
+  year          = {2026}
 }
 ```
