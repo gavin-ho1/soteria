@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-08-21T06:31:10.301276+00:00",
+  "metric_scope": "outcome-independent 1 s rolling replay",
+  "conditions": [
+    "bare",
+    "+chan_drop",
+    "+hazard",
+    "+alarm_loss",
+    "+focal",
+    "+groupdro",
+    "+margin",
+    "+cvar",
+    "default",
+    "gru",
+    "lstm",
+    "tcn",
+    "transformer",
+    "lru_pure",
+    "gru_pure",
+    "lstm_pure",
+    "decoder_default",
+    "decoder_noskip",
+    "decoder_no_ssem",
+    "decoder_full",
+    "decoder_regressive",
+    "decoder_ictal_skip",
+    "decoder_ictal_noskip",
+    "decoder_hmm2",
+    "decoder_threshold"
+  ],
+  "seeds": [
+    12811957,
+    198655547,
+    320942036,
+    1205112118,
+    1344571277,
+    1456124910,
+    1508945547,
+    1604011579,
+    1661938183,
+    1694056806,
+    1697828733,
+    1814110808,
+    1871455221,
+    1904331482,
+    2004173725
+  ],
+  "n_records_per_condition_seed": 210,
+  "cluster_bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260817,
+  "input_sha256": {
+    "worker_posthoc/objective/bare.json": "7e52ef7d2f0230f150d047de589e6685a2bbbbe00c73920594662747bdbde59f",
+    "worker_posthoc/objective/+chan_drop.json": "b14a42c9cbe0cd38f698e9b7c311c01b1f0d1d42ac054a72bec90d92eb5be1f4",
+    "worker_posthoc/objective/+hazard.json": "334745706cbb2ff910d46654916c670ca15fc596ec78aa492ef263f52bce6224",
+    "worker_posthoc/objective/+alarm_loss.json": "cfa79a4d16068df3750cd0d87752222b3a74178fcfd29d3183aac51918fcb8ae",
+    "worker_posthoc/objective/+focal.json": "fb81b0fbd47b8d7b090cb4db127b51cee912561f11b7393eb2b36ced5afbac86",
+    "worker_posthoc/objective/+groupdro.json": "9d7a3b5e4a02c2773884a333b6d21673c1e1f24b40081716dab425e78f18fb9f",
+    "worker_posthoc/objective/+margin.json": "41222fbda0c1d0a9c8b3f53baf59d612f531b1536e4980df5598c60a6235bb2b",
+    "worker_posthoc/decoder/default_all_modes.json": "acda65adc03cdd1ce2e41946a80382386620f0427c680fc7b2d07078aa92e6f7",
+    "worker_arch/rolling/gru.json": "2642db6d5bde9acb9808e68120a66cbab1eb764500f3618af45ea3c8184e488c",
+    "worker_arch/rolling/lstm.json": "c56a4120470047302938b7346db34ae5624287db1d383c57dd10d2090112d3f7",
+    "worker_arch/rolling/tcn.json": "081efc3917a49f6a20288a7eaed3102fb871cfc63fb18b9171440f5f6b5595b4",
+    "worker_arch/rolling/transformer.json": "7bcc98813cd86423cb480f493abe7d4c77756a1755ae224bc63b0edb749f5c82",
+    "worker_misc/rolling/gru_pure.json": "41668bd461426556ccc6283062f9f384155b206c8c5257c3699e1c42adac9d24",
+    "worker_misc/rolling/lstm_pure.json": "7454679f349d9fb1df22abc4d854e40477d55b74a1a174c6faae82d2ce70080c"
+  },
+  "outputs": {
+    "backbone_rolling_roc.pdf": {
+      "sha256": "70667def214a63278947f18d9a9d95ceae4407448d45c1387fb472025ddd79bc",
+      "bytes": 36274
+    },
+    "backbone_rolling_roc.png": {
+      "sha256": "f6ef8acc04ff025f77cae195f2f4edd5ff81f326e5a4fe2d5322b3b0c8695e2a",
+      "bytes": 306374
+    },
+    "condition_per_seed.csv": {
+      "sha256": "465a39864bb3070dc39803aad65083254cc983805a9414bea6aca3fff1dc2c2f",
+      "bytes": 71756
+    },
+    "condition_summary.csv": {
+      "sha256": "483b04e36025cbc8a33f64ec2a301c8cf738e0bbd369309e8507529eb9500185",
+      "bytes": 15572
+    },
+    "delong_and_clustered_auc_pairs.csv": {
+      "sha256": "e76060a585701bb58d8372010aaea9027841e22775a128654baceba4db3422ee",
+      "bytes": 4338
+    },
+    "mean_peak_risks.csv": {
+      "sha256": "09443fa83ec1dfa3af224cdf8e599b87dc7731f81162582c12c560818e2d64ea",
+      "bytes": 352974
+    },
+    "operating_point_vs_curve_per_seed.csv": {
+      "sha256": "29e0de4e6dc57b8403f0f13adeaf4013d598a3eb2141de8b311bb49d44d262c1",
+      "bytes": 1299
+    },
+    "operating_point_vs_curve_summary.csv": {
+      "sha256": "7f71bc825cc4dc4417088b4f0dab7c77bf7ae16ab47981a3cbe91b04045ae1dd",
+      "bytes": 272
+    },
+    "roc_auc_per_seed.csv": {
+      "sha256": "c23eb9fa07f4c63aae14b74b3917c7ee6e24bd6fab789fdfcb049e912da21adf",
+      "bytes": 2799
+    },
+    "roc_curves.csv": {
+      "sha256": "4ddcdb57104be28d25783ec71ec09a74fae511e5675537672585b196062c0974",
+      "bytes": 53416
+    },
+    "rolling_record_scores.csv": {
+      "sha256": "4ca07299a22c3681c0be6b8d631d5210bdb707c85e24c09cb060ca1413db018d",
+      "bytes": 9492256
+    },
+    "wilcoxon_pairs.csv": {
+      "sha256": "b8139efd323c8369518a1683aea236fffb68b55058cdfdfaa6d26383d09906bd",
+      "bytes": 32129
+    }
+  }
+}

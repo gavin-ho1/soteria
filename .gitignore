@@ -1,0 +1,48 @@
+# GESTURES data and the feature cache (not redistributed; see README)
+data/dataset/
+data/dataset.zip
+data/cache/
+/*.zip
+
+# Local run outputs from the README commands.
+/results/
+
+# Model checkpoints (one .pt per fold per seed per condition): large and reproducible by rerunning.
+*.pt
+
+# Paper run outputs: only the compact files needed to reproduce the published tables, ROC curves, DeLong, Wilcoxon, and clustered-bootstrap statistics are tracked (no checkpoints).
+streaming_predictor/results/*
+!streaming_predictor/results/postaudit_rolling_only_20260817/
+streaming_predictor/results/postaudit_rolling_only_20260817/*
+!streaming_predictor/results/postaudit_rolling_only_20260817/reproduction_seeds.json
+!streaming_predictor/results/postaudit_rolling_only_20260817/paper_analysis_complete_20260818/
+!streaming_predictor/results/postaudit_rolling_only_20260817/paper_analysis_complete_20260818/**
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_arch/
+streaming_predictor/results/postaudit_rolling_only_20260817/worker_arch/*
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_arch/rolling/
+streaming_predictor/results/postaudit_rolling_only_20260817/worker_arch/rolling/*
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_arch/rolling/*.json
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_misc/
+streaming_predictor/results/postaudit_rolling_only_20260817/worker_misc/*
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_misc/rolling/
+streaming_predictor/results/postaudit_rolling_only_20260817/worker_misc/rolling/*
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_misc/rolling/*_pure.json
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_posthoc/
+streaming_predictor/results/postaudit_rolling_only_20260817/worker_posthoc/*
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_posthoc/objective/
+streaming_predictor/results/postaudit_rolling_only_20260817/worker_posthoc/objective/*
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_posthoc/objective/*.json
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_posthoc/decoder/
+streaming_predictor/results/postaudit_rolling_only_20260817/worker_posthoc/decoder/*
+!streaming_predictor/results/postaudit_rolling_only_20260817/worker_posthoc/decoder/default_all_modes.json
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Local tooling and OS files
+tmp/
+*.log
+.DS_Store

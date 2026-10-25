@@ -1,0 +1,2 @@
+n_seeds,mean_diff,ci95_low,ci95_high,paired_t,paired_t_p,wilcoxon_w,wilcoxon_p,n_seeds_nonnegative_diff,n_seeds_strictly_positive_diff
+15,0.029824561403508774,0.011051001915717385,0.04859812089130017,3.407309216604942,0.0042506390286665115,0.0,0.007579281943389729,15,9

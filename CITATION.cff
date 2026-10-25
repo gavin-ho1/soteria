@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "SOTERIA: Video-based Seizure Prediction"
+authors:
+  - family-names: Ho
+    given-names: Gavin
+license: MIT
+repository-code: "https://github.com/gavin-ho1/soteria"
+preferred-citation:
+  type: article
+  title: "SOTERIA: Video-based Seizure Prediction"
+  authors:
+    - family-names: Ho
+      given-names: Gavin
+  year: 2026
+  journal: "arXiv preprint arXiv:YOUR_PAPER_ID"
+  url: "https://arxiv.org/abs/YOUR_PAPER_ID"

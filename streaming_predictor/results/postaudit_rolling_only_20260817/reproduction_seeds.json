@@ -1,0 +1,40 @@
+{
+  "description": "Exact random seeds and deterministic seed derivations for the paper-authoritative rolling run.",
+  "environment_note": "These seeds fix the randomization contract, but requirements.txt is not a bit-exact dependency lock.",
+  "provenance_note": "The retained paper run records the exact rolling evaluator hash, but not the full original checkpoint-training source, checkpoint, or feature-cache hashes.",
+  "condition_seeds_in_execution_order": [
+    12811957,
+    1661938183,
+    1697828733,
+    1344571277,
+    320942036,
+    1508945547,
+    2004173725,
+    1694056806,
+    1456124910,
+    1604011579,
+    1814110808,
+    1871455221,
+    1205112118,
+    198655547,
+    1904331482
+  ],
+  "fold_index_range": [0, 9],
+  "outer_cv_seed_rule": "condition_seed",
+  "calibration_split_seed_rule": "condition_seed + fold_index",
+  "training_seed_rule": "condition_seed + 100 * fold_index",
+  "rolling_replay": {
+    "cadence_sec": 1.0,
+    "additional_random_seed": null,
+    "rolling_worktree_base_git_sha": "7678bfdcfd02bd566260b9287a2f5c0caacb945e",
+    "rolling_evaluator_sha256": "7df2cacfc94d77865720f2b510e1a01e5607ccd1cc494693abe92eb448c61b4e"
+  },
+  "patient_clustered_bootstrap": {
+    "seed": 20260817,
+    "replicates": 10000
+  },
+  "device": "cpu",
+  "data": {
+    "seizures_csv_sha256": "0c5e117478f1e1d5939199290c565bc2733d99cd2513b52310715e2edf490ab9"
+  }
+}
