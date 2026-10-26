@@ -13,7 +13,7 @@ This is the official implementation of SOTERIA, accepted at ICIIBMS 2026.
 
 <p align="center">
   <img src="img/causal_replay_301_02.gif"><br>
-  <sub><em>Causal replay of a held-out recording (3× speed): video features arrive over time, risk is updated every second from at most the last 20 s, and SOTERIA alarms 29.5 s before annotated clonic onset.</em></sub>
+  <sub><em>Causal replay of a held-out recording of video features and risk stream (3× speed)</em></sub>
 </p>
 
 Most video-based seizure work targets detection: retrospectively judging whether a recorded segment contains a seizure. SOTERIA is a strictly causal video-based system that instead targets ***prediction***: while a seizure is in progress, it estimates whether the seizure will reach clonic onset before that onset is visible, using only the video seen so far. Every prediction at time $t$ is a function of observations up to $t$ only, enforced by the following causal contract:
