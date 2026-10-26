@@ -28,7 +28,7 @@ SOTERIA combines frozen spatiotemporal appearance embeddings  with a causal Line
 
 <p align="center">
   <img src="img/pipeline.png"><br>
-  <sub><em>SOTERIA pipeline: STCNN features → causal LRU backbone → HMM alarm decoder.</em></sub>
+  <sub><em>SOTERIA pipeline</em></sub>
 </p>
 
 ## Getting Started
