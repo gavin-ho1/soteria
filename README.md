@@ -7,7 +7,7 @@
   <a href="https://gavin-ho1.github.io/soteria/paper.pdf"><img alt="Paper" src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=for-the-badge&logo=googledocs&logoColor=white" /></a>
   <img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img alt="PyTorch 2.2+" src="https://img.shields.io/badge/PyTorch-2.2%2B-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" /></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://custom-icon-badges.demolab.com/badge/License-MIT-green?style=for-the-badge&logo=law&logoColor=white" /></a>
 </p>
 
 This is the official implementation of SOTERIA, accepted at ICIIBMS 2026.
